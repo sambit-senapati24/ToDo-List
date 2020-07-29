@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ToDo List by Sambit</title>
+  <link href = "ToDo List Style.css" type = "text/css" rel = "stylesheet">
+</head>
+<body>
+  <script>
+  'use script'
+  </script>
+  <div class = "upperdiv">
+    <h2 class = "headinglist">ToDo List</h2>
+  </div>
+  <hr>
+  <div class = "middiv">
+    <h3 class = "info">Below object is to add ToDo List items</h3>
+  </div>
+
+  <form class = "ToDoListForm" id = "ToDoListForm" autocomplete= "off" submit = "ToDoListAdd()">
+    <input type = 'text' id = "ToDoInput" class = "ToDoInput" placeholder="Enter To DO List Items here!!">
+    <button type = "button" id = 'ToDoAdd' class = "ToDoAdd" onclick = "ToDoListAdd()">Add</button>
+    <button type = "reset" id = 'ToDoAdd' class = "ToDelete" onclick = "ToDeleteEntireList()">Delete</button>
+  </form>
+  
+  <div class = "listDiv" id = "listDiv">
+    <ul id = "List" class = "List">
+    </ul>
+  </div>
+  <script src = "ToDo List JavaScript.js"></script>
+  <div class = "footer">
+     <p class = "para">This is the Footer</p>
+  </div>
+</body>
+</html>
